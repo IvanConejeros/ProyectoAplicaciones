@@ -1,0 +1,54 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Tab 2
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+ <form (ngSubmit)="capturaDatos()" #formulario="ngForm">
+  
+  <ion-list>
+    <ion-item>
+      <ion-input
+        label="Usuario"
+        label-placement="floating"
+        fill="outline"
+        placeholder="Ingrese su Usuario"
+      [(ngModel)]="usuario"
+      name="usuario"
+      required>
+      </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input
+        label="Nombre"
+        label-placement="floating"
+        fill="outline"
+        placeholder="Ingrese su Nombre"
+      [(ngModel)]="nombre"
+      name="usuario"
+      required>
+      </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input
+        label="Apellidos"
+        label-placement="floating"
+        fill="outline"
+        placeholder="Ingrese su Apellidos"
+      [(ngModel)]="apellidos"
+      name="apellidos"
+      required>
+      </ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-button expand="full" type="submit" color="primary">Capturar datos<</ion-button>
+ </form>
+
+
+
+
+
+</ion-content>
